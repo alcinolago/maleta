@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search_booking"
+        android:icon="@android:drawable/ic_menu_search"
+        android:inputType="textCapCharacters"
+        android:title="@string/menu_search_booking"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/sortMenu"
+        android:icon="@drawable/ic_baseline_filter_list_24"
+        android:orderInCategory="200"
+        android:title="@string/menu_sort"
+        app:showAsAction="always">
+        <menu>
+            <item
+                android:id="@+id/sortName"
+                android:orderInCategory="100"
+                android:title="Nome" />
+            <item
+                android:id="@+id/sortDate"
+                android:orderInCategory="100"
+                android:title="Data" />
+            <item
+                android:id="@+id/sortPlace"
+                android:orderInCategory="100"
+                android:title="Ambiente" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/logoutMenu"
+        android:icon="@drawable/ic_baseline_exit_to_app_24"
+        android:orderInCategory="300"
+        android:title="@string/menu_logout"
+        app:showAsAction="always" />
+
+</menu>
